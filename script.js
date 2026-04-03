@@ -16,7 +16,7 @@
     if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(query)) {
       result.className = 'search-result search-result--error';
       result.textContent =
-        'Invalid format. The key must follow the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.';
+        'Invalid format. Please paste the hash exactly as provided.';
       return;
     }
 

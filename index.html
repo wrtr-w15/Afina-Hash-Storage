@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Afina — Script Hash Verification</title>
-  <meta name="description" content="Official UUID keys of Afina scripts. Verify script authenticity before running.">
+  <meta name="description" content="Official hashes of Afina scripts. Verify script authenticity before running.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,11 +46,11 @@
 
         <div class="warning-banner">
           <div class="warning-icon"></div>
-          <h2>Why check the key?</h2>
+          <h2>Why check the hash?</h2>
           <p>
-            Every Afina script has a unique UUID key — a digital identifier of the file.
+            Every Afina script has a unique hash — a digital identifier of the file.
             If a script has been modified after publication (intentionally or as the result of an attack),
-            its key will not match the reference value on this page.
+            its hash will not match the reference value on this page.
           </p>
           <ul class="risk-list">
             <li>Script substitution in transit via an insecure channel (MITM attack)</li>
@@ -76,13 +76,13 @@
         <div class="instruction-card">
           <h3>Verification steps</h3>
           <ol>
-            <li>Obtain the key associated with your downloaded script.</li>
+            <li>Obtain the hash associated with your downloaded script.</li>
             <li>
               Go to the <strong>Scripts</strong> section below and find the corresponding script.
             </li>
             <li>
-              Paste the key into the search tool below and click <strong>Verify</strong>.
-              A match confirms the key is authentic.
+              Paste the hash into the verification tool below and click <strong>Verify</strong>.
+              A match confirms the hash is authentic.
             </li>
           </ol>
         </div>
@@ -102,21 +102,21 @@
         <span class="section-label">Verified files</span>
         <h2 class="section-title">Afina Scripts</h2>
         <p class="section-subtitle">
-          Official UUID keys. Click a key to select it entirely, then paste it into the search tool above.
+          Official hashes. Click a hash to select it entirely, then paste it into the verification tool above.
         </p>
 
         <!-- Hash search widget -->
         <div class="search-widget" id="search">
-          <label for="hash-input" class="search-label">Verify a key</label>
+          <label for="hash-input" class="search-label">Verify a hash</label>
           <p class="search-description">
-            Paste the key of your downloaded script to instantly check its authenticity.
+            Paste the hash of your downloaded script to instantly check its authenticity.
           </p>
           <div class="search-row">
             <input
               type="text"
               id="hash-input"
               class="search-input"
-              placeholder="Paste key here (e.g. 70615f46-18c7-4d9e-95a3-0575e6ff620f)"
+              placeholder="Paste hash here..."
               maxlength="128"
               autocomplete="off"
               spellcheck="false"
@@ -132,7 +132,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Rabby Create</h3>
               </div>
               <div class="card-meta">
@@ -144,9 +144,9 @@
               Creates a new Rabby wallet account within the Afina environment.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">4a7b5bb3-c6db-4404-b23f-c14cfd2d2e70</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -154,7 +154,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Keplr Wallet Import / Create</h3>
               </div>
               <div class="card-meta">
@@ -166,9 +166,9 @@
               Imports an existing or creates a new Keplr wallet account.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">70615f46-18c7-4d9e-95a3-0575e6ff620f</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -176,7 +176,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Rabby Wallet Import</h3>
               </div>
               <div class="card-meta">
@@ -188,9 +188,9 @@
               Imports an existing Rabby wallet using a seed phrase or private key.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">fb886f75-bb0c-41aa-bf2f-43e3693f39cb</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -198,7 +198,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Gmail Login</h3>
               </div>
               <div class="card-meta">
@@ -210,9 +210,9 @@
               Automates Gmail account login for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">fec018c5-eccf-4f3f-9527-94723e231dad</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -220,7 +220,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Twitter Login</h3>
               </div>
               <div class="card-meta">
@@ -232,9 +232,9 @@
               Automates Twitter / X account login for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">e804cdc5-7291-4d6a-a035-259f573e50a9</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -242,7 +242,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Discord Login</h3>
               </div>
               <div class="card-meta">
@@ -254,9 +254,9 @@
               Automates Discord account login for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">8f75ecaf-3299-41d1-8659-f6fed16d56a4</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -264,7 +264,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">X Calmer</h3>
               </div>
               <div class="card-meta">
@@ -276,9 +276,9 @@
               X / Twitter activity management utility for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">ec30276a-4193-4582-8d0c-6f0e4ced43cf</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -286,7 +286,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Metamask Import / Create</h3>
               </div>
               <div class="card-meta">
@@ -298,9 +298,9 @@
               Imports an existing or creates a new MetaMask wallet account.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">a3e82a80-808f-498f-a6c2-0836dc5f87eb</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -308,7 +308,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Phantom Import / Create</h3>
               </div>
               <div class="card-meta">
@@ -320,9 +320,9 @@
               Imports an existing or creates a new Phantom wallet account.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">bc001e25-8682-49ae-98e9-76fb6d0662a7</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -330,7 +330,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">BackPack (Import | Create)</h3>
               </div>
               <div class="card-meta">
@@ -342,9 +342,9 @@
               Imports an existing or creates a new Backpack wallet account.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">2775c3aa-eb4a-4343-9260-c198fce20211</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -352,7 +352,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Bybit Registration</h3>
               </div>
               <div class="card-meta">
@@ -364,9 +364,9 @@
               Automates new account registration on the Bybit exchange.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">1ebb7f09-f7c4-4179-837f-43696e93a5f8</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -374,7 +374,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Bybit Login</h3>
               </div>
               <div class="card-meta">
@@ -386,9 +386,9 @@
               Automates login to an existing Bybit exchange account.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">4652eb27-17ad-40b3-90a8-a52350f84bce</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -396,7 +396,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Metamask Wallet</h3>
               </div>
               <div class="card-meta">
@@ -408,9 +408,9 @@
               Metamask wallet management for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">91866b4e-f69c-4c50-b7e4-de73b2c925c6</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -418,7 +418,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Backpack Wallet</h3>
               </div>
               <div class="card-meta">
@@ -430,9 +430,9 @@
               Backpack wallet management for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">acf3cf1b-695e-4baf-b7ad-bb30a925808b</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -440,7 +440,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Phantom Wallet</h3>
               </div>
               <div class="card-meta">
@@ -452,9 +452,9 @@
               Phantom wallet management for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">1bf47ca9-a574-4e90-b167-dbd0e11bd84e</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -462,7 +462,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">OKX boost demo</h3>
               </div>
               <div class="card-meta">
@@ -474,9 +474,9 @@
               OKX boost demo script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">3c51a498-44fa-4857-ae7e-8ea223d7bd91</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -484,7 +484,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">OKX boost join demo</h3>
               </div>
               <div class="card-meta">
@@ -496,9 +496,9 @@
               OKX boost join demo script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">e46e70d8-71f2-411b-98b0-34f12f84d128</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -506,7 +506,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">OKX boost claim demo</h3>
               </div>
               <div class="card-meta">
@@ -518,9 +518,9 @@
               OKX boost claim demo script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">c0d625a6-1b7b-4e63-9ccb-70a989d6b897</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -528,7 +528,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Arc</h3>
               </div>
               <div class="card-meta">
@@ -540,9 +540,9 @@
               Arc script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">15484d4f-b3ba-4f94-abae-d1b980d4985b</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -550,7 +550,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Inco</h3>
               </div>
               <div class="card-meta">
@@ -562,9 +562,9 @@
               Inco script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">a71a2b73-c0d4-4b1c-af75-ce88f4a16b19</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -572,7 +572,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Ethereal</h3>
               </div>
               <div class="card-meta">
@@ -584,9 +584,9 @@
               Ethereal script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">963b91e7-1c50-4281-9213-387e4673926a</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -594,7 +594,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Ambient demo</h3>
               </div>
               <div class="card-meta">
@@ -606,9 +606,9 @@
               Ambient demo script for the Afina workflow.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">7bb1dfbd-bcc2-406f-9c3c-9d33966f501d</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
@@ -616,7 +616,7 @@
           <article class="script-card">
             <div class="card-header">
               <div class="card-title-group">
-                <span class="card-badge">KEY</span>
+                <span class="card-badge">HASH</span>
                 <h3 class="card-name">Slush Wallet (Import | Create)</h3>
               </div>
               <div class="card-meta">
@@ -628,9 +628,9 @@
               Imports an existing or creates a new Slush wallet account.
             </p>
             <div class="hash-block">
-              <span class="hash-label">KEY</span>
+              <span class="hash-label">HASH</span>
               <code class="hash-value">6b583e8f-4c0e-4ee9-9ba9-9d43500bb486</code>
-              <span class="hash-hint">Click the key to select it entirely</span>
+              <span class="hash-hint">Click the hash to select it entirely</span>
             </div>
           </article>
 
